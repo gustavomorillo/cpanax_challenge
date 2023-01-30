@@ -37,7 +37,7 @@ const Home: FC = () => {
         </Button>
         <Button
           variant="contained"
-          href="https://cpnax-jira.gustavomorillo.com"
+          href="https://master.d1tehxbmau3jcc.amplifyapp.com/"
         >
           Challenge 4
         </Button>
