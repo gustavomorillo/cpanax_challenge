@@ -1,0 +1,9 @@
+.react-flow__node-custom {
+  padding: 10px;
+  background-color: #1976d2;
+  color: white;
+}
+
+.react-flow__node-custom span {
+  font-style: italic;
+}

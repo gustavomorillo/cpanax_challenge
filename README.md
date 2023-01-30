@@ -1,10 +1,12 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ![android-icon-48x48](https://user-images.githubusercontent.com/6616670/203347014-4b5f6081-4bff-4ffc-bbd0-e18f4f5559bc.png) CPANAX: Desarrollador en React
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+For install all dependencies
 
 ### `npm start`
 
@@ -14,33 +16,78 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+La presente es evaluar sus habilidades tecnicas en base a una serie de desafíos que les planteare mas adelante, ustedes deciden cual tomar y hasta donde llegar.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Sientanse libres de usar estos desafíos en sus cuentas de git para sus portafolios.
 
-### `npm run build`
+_Nota: Deben realizar los primeros 3 desafios, el ultimo es un extra pero opcional._
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Se evaluara:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Diseño de las tarjetas.
+- Diseño del panel (si aplica en el requerimiento).
+- Diseño de la Pagina.
+- Habilidad en seguir instrucciones.
+- Habilidad en la ejecución de la tarea.
+- Conocimientos en React
+- Manejo de Formularios (si aplica en el requerimiento).
+- Majejo de Estados.
+- Optimizaciones de codigo.
+- Optimizaciones de render.
+- Estimación de tiempo vs cumplimiento por desafío.
+- Despliege en algún host como [netlify](https://www.netlify.com/), [vercel](https://vercel.com/) o el que estes usando actualmente.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Desafío 1: Elaborar una lista de productos
 
-### `npm run eject`
+Se requiere obtener de un servicio los productos y elaborar una lista, para ello sera necesario:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Poder cambiar la cantidad de tarjetas por filas a mostrar, por defecto mostrar 4 tarjetas en la fila.
+- Paginación
+- Representar: Imagen, titulo y marca
+- Modal que aparecera al momento de darle click a la tarjetay debe apaecer una galeria de imagenes.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Libreria para realizar la petición**: [axios](https://www.npmjs.com/package/axios)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**URL del servicio**: https://dummyjson.com/products
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Desafío 2: Elaborar una Tabla con los usuarios de la app
 
-## Learn More
+Se requiere obtener de una servicio la información de los usuarios de la aplicación, para ello sera necesario:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Paginación de los datos
+- Los campos a representar: firstName, lastName, age, username, ip, image (opcional)
+- Modal que muestre información complementaria del usuario.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Libreria para Tablas**: [react-base-table](https://www.npmjs.com/package/react-base-table)
+
+**Libreria para realizar la peticion**: [axios](https://www.npmjs.com/package/axios)
+
+**URL del servicio**: https://dummyjson.com/users
+
+## Desafío 3: Elaborar un Diagrama de Recursos
+
+Se requiere elaborar un diagrama donde se represente el flujo de la aplicacion, para ello sera necesario disponer:
+
+- Panel lateral donde se tenga las opciones que permitan arrastrar y soltar.
+- Al dar click en el header de la tarjeta llamar una modal con un Formulario que permita cambiar el titulo y descripciones de la tarjeta.
+- Un boton + (Agregar) en la tarjeta para crear un nuevo nodo generico.
+
+**Libreria sugerida para el diagrama**: [reactflow](https://www.npmjs.com/package/reactflow)
+
+**Libreria sugerida para los formularios**: Queda a su eleccion
+
+**Libreria sugerida para la modal**: Queda a su eleccion
+
+**Archivo de datos**: [data.js](https://github.com/ajimenezg/cpanax-desafio/blob/main/diagrama/data.js)
+
+## Desafío 4 (Opcional): Elaborar un Kanban (Trello)
+
+Se requiere elaborar kanban donde contenga un panel de tareas que se arrastran a las columnas, para ello sera necesario disponer:
+
+- Panel lateral donde se tenga las tareas que permitan arrastrar y soltar.
+- Poder mover la tarjeta a diferentes Columns/Groups.
+- Un boton + (Agregar) en el final de la columna para agregar una nueva tarea.
+
+**Libreria sugerida para el diagrama**: [@dnd-kit](https://www.npmjs.com/package/@dnd-kit/core)
+
+**Libreria sugerida para la modal**: Queda a su eleccion
