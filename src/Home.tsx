@@ -37,7 +37,7 @@ const Home: FC = () => {
         </Button>
         <Button
           variant="contained"
-          href="https://master.d1tehxbmau3jcc.amplifyapp.com/"
+          href="https://animated-zuccutto-0393db.netlify.app/"
         >
           Challenge 4
         </Button>
