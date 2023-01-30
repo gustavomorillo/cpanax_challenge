@@ -35,6 +35,12 @@ const Home: FC = () => {
         <Button variant="contained" onClick={() => navigate("/challenge-3")}>
           Challenge 3
         </Button>
+        <Button
+          variant="contained"
+          href="https://cpnax-jira.gustavomorillo.com"
+        >
+          Challenge 4
+        </Button>
       </Box>
     </Box>
   );
